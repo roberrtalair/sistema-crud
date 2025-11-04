@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema CRUD</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./principal.html">Principal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./cadastrar.html">Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./leitura.html">Leitura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./atualizar.html">Atualizar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./apagar.html">Apagar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="h1">Bem vindo ao Sistema CRUD!</h1>
+    <h3>Você está na página principal! Utilize o menu para navegar nas opções.</h3>
+    <h5>Clique <button type="button" class="btn btn-secondary" id="btn_sair">aqui</button> para sair.</h5>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./notificacao.js"></script>
+    <script src="./cookie.js"></script>
+    <script src="./sessao.js"></script>
+    <script src="./principal.js"></script>
+</body>
+</html>

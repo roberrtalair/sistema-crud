@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast test</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <button class="btn btn-primary" onclick="mostrarToast()">Mostrar Toast</button>
+    <div id="minhaToastFixa" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000">test</div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function mostrarToast() {
+            const toastEl = document.getElementById('minhaToastFixa');
+            const toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        }
+        mostrarToast();
+    </script>
+</body>
+</html>

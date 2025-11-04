@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <form id="frm_login">
+        <div class="container w-50">
+            <h1 class="h1 text-center">Digite seu Login e Senha abaixo, para Entrar.</h1>
+            <div class="mb-3">
+                <label class="form-label" for="txt_login">Login:</label>
+                <input class="form-control" id="txt_login" type="text" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="txt_senha">Senha:</label>
+                <input class="form-control" id="txt_senha" type="password" />
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary" id="btn_entrar">Entrar</button>
+                <a href="cadastrar.html" class="btn btn-secondary" target="_self">Cadastrar</a>
+                <button type="button" class="btn btn-danger" id="btn_limpar">Limpar</button>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="rdg_manter_conectado" name="rdg_options">
+                <label class="form-check-label" for="rdg_manter_conectado">Manter Conectado</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="rdg_salvar_senha" name="rdg_options">
+                <label class="form-check-label" for="rdg_salvar_senha">Salvar Senha</label>
+            </div>
+            <div class="alert alert-success" id="div_notificacoes_ok" style="display: none;"></div>
+            <div class="alert alert-danger" id="div_notificacoes_nok" style="display: none;"></div>
+        </div>
+    </form>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./login.js"></script>
+    <script src="./notificacao.js"></script>
+    <script src="./cookie.js"></script>
+    <script src="./sessao.js"></script>
+</body>
+</html>

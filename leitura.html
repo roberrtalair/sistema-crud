@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema CRUD</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+    <form id="frm_pesquisar">
+        <div class="container w-50">
+            <h1 class="h1 text-center">Sistema CRUD</h1>
+            <h3 class="h3 text-center">Você está na página de leitura!</h3>
+            <h5 class="h5 text-center">Utilize o menu para navegar nas opções.</h5>
+            <h6 class="h6 text-center">Selecione um Id ou pesquise por um Nome ou Login abaixo.</h6>
+            <div class="mb-3">
+                <label class="form-label" for="txt_id">Id:</label>
+                <input class="form-control" id="txt_id" type="text" disabled />
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="txt_nome">Nome:</label>
+                <input class="form-control" id="txt_nome" type="text" disabled />
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="txt_login">Login:</label>
+                <input class="form-control" id="txt_login" type="text" disabled />
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="txt_pesquisar">Pesquisar:</label>
+                <input class="form-control" id="txt_pesquisar" type="text" />
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-success" id="btn_pesquisar">
+                    <i class="fa-solid fa-magnifying-glass" title=""></i>
+                </button>
+                <button type="button" class="btn btn-danger" id="btn_limpar">
+                    <i class="fa-solid fa-eraser"></i>
+                </button>
+            </div>
+            <div class="mb-3">
+                <button type="button" class="btn btn-warning" id="btn_primeiro">&lt;&lt;</button>
+                <button type="button" class="btn btn-warning" id="btn_anterior">&lt;</button>
+                <button type="button" class="btn btn-warning" id="btn_proximo">&gt;</button>
+                <button type="button" class="btn btn-warning" id="btn_ultimo">&gt;&gt;</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="./leitura.js"></script>
+    <script src="./notificacao.js"></script>
+</body>
+</html>
